@@ -293,6 +293,7 @@ header nav svg:hover {/*
 }
 
 header nav ul {
+  margin: 15px 0;
   display: flex;
   list-style: none;
   padding: 0;
@@ -515,54 +516,60 @@ footer.new p {
 
 /* Stupid mobile adaptation */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 675px) {
+  header nav svg {
+    transform: translateY(-25%);
+    height: 45px;
+  }
 
+  header nav ul {
+    margin: 10px 0;
+  }
+
+  header nav ul li a {
+    margin: 14px 12px;
+    font-size: 0.85em;
+  }
 }
 
 @media screen and (max-width: 512px) {
-	body {
-		font-size: 13px;
-  }
-  
   header nav svg {
-    width: 50px;
-    height: 50px;
-  }
-  
-  header nav svg {
-    width: 55px;
-    height: 55px;
+    transform: translateY(-25%);
+    height: 40px;
   }
 
-	footer {
-		font-size: 11px;
-	}
+  header nav ul li {
+    margin-right: 0;
+  }
 
-	#c2 li {
-		margin-right: 25px;
-	}
-
-	#c2 li svg {
-		width: 30px;
-		height: 30px;
-	}
-
-	#c2 li svg:hover {
-		width: 35px;
-		height: 35px;
-	}
+  header nav ul li a {
+    margin: 12px 10px;
+    font-size: 0.75em;
+  }
 }
 
-@media screen and (max-width: 400px) {  
-  #c1 {
-    font-size: 50px;
+@media screen and (max-width: 460px) {
+  header nav svg {
+    transform: translateY(-30%);
+    height: 35px;
   }
 
-	#c2 li {
-		margin-right: 15px;
-	}
+  header nav ul li a {
+    margin: 10px 8px;
+    font-size: 0.65em;
+  }
+
 }
 
-@media screen and (max-width: 256px) {
+@media screen and (max-width: 400px) {
+  header nav svg {
+    transform: translateY(-5%);
+    height: 25px;
+  }
+
+  header nav ul li a {
+    margin: 8px 5px;
+    font-size: 0.50em;
+  }
 
 }
