@@ -220,10 +220,13 @@ $(() => {
             anim.show($("#c4"), 900, 750);
             $("#theme").click(() => {theme.change()});
             get.text("https://www.sololearn.com/Profile/4746232").then((m) => {
+                debug.log("Got SoloLearn page");
                 let parser = new DOMParser;
-                let img = $(parser.parseFromString(m, "text/html")).find(".course img")
+                let img = $(parser.parseFromString(m, "text/html")).find(".course img");
+                debug.log("Parsed SoloLearn page, got "+img.length+" elements");
                 for (let i = 0; i < img.length; i++) {
-                    $(".plangs").append($("<li></li>").html("<img src=\"/assets/icons/langs/"+img.eq(i).attr("alt")+".svg\" alt=\""+img.eq(i).attr("alt")+"\">"))
+                    $(".plangs").append($("<li></li>").html("<img src=\"/assets/icons/langs/"+img.eq(i).attr("title")+".svg\" alt=\""+img.eq(i).attr("title")+"\">"));
+                    debug.log("Appended "+img.eq(i).attr("alt"));
                 }
             });
             data.vk.get("https://api.vk.com/method/users.get?user_id=263432692&fields=photo_max_orig,online&access_token="+vk_api_key, () => {$(".face").append($("<img>").attr("src", data.data.photo_max_orig))});
