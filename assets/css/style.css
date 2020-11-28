@@ -266,6 +266,7 @@ header {
 header nav {
   font-size: 30px;
   position: relative;
+  margin-bottom: 5%;
 }
 
 header nav a{
@@ -382,9 +383,17 @@ main {
   font-size: 17px;
 }
 
+main .info {
+  margin: 0; margin-bottom: 15%;
+}
+
 main .plangs {
   display: flex;
   list-style: none;
+}
+
+main .plangs ul {
+  padding: 0;
 }
 
 main .plangs li {
@@ -392,7 +401,7 @@ main .plangs li {
 }
 
 main .plangs img {
-  height: 50px;
+  height: 40px  ;
 }
 
 .social ul {
