@@ -568,6 +568,15 @@ footer.new p {
     margin: 12px 10px;
     font-size: 0.75em;
   }
+
+  header .me .face img {
+    width: 130px;
+    height: 130px;
+  }
+
+  header .me h1 {
+    font-size: 50px;
+  }
 }
 
 @media screen and (max-width: 460px) {
