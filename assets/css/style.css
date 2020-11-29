@@ -391,6 +391,8 @@ main .plangs {
   display: flex;
   list-style: none;
   padding: 0;
+  margin: auto;
+  width: fit-content;
 }
 
 main .plangs li {
@@ -603,6 +605,14 @@ footer.new p {
     font-size: 14px;
   }
 
+  main .info {
+    margin-bottom: 40px;
+  }
+
+  main .plangs img {
+    height: 30px;
+  }
+
   main .social ul {
     font-size: 13px;
   }
@@ -652,6 +662,10 @@ footer.new p {
     font-size: 12px;
   }
   
+  main .info {
+    margin-bottom: 30px;
+  }
+
   main .social ul {
     font-size: 11px;
   }
