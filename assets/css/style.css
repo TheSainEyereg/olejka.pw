@@ -354,7 +354,7 @@ header nav ul li a:focus::after {
 
 header .me {
   padding: 5px;
-  margin: 5% auto;
+  margin: 60px auto;
 }
 
 header .me * {
@@ -372,27 +372,24 @@ header .me img {
 }
 
 header .me h1 {
-  font-size: 60px;
+  font-size: 65px;
   margin-top: 2%;
 }
 
 main {
   text-align: center;
   width: fit-content;
-  margin: 5% auto;
+  margin: 60px auto;
   font-size: 17px;
 }
 
 main .info {
-  margin: 0; margin-bottom: 15%;
+  margin: 0; margin-bottom: 50px;
 }
 
 main .plangs {
   display: flex;
   list-style: none;
-}
-
-main .plangs ul {
   padding: 0;
 }
 
@@ -404,7 +401,7 @@ main .plangs img {
   height: 40px  ;
 }
 
-.social ul {
+main .social ul {
 	position: relative;
 	display: flex;
 	list-style-type: none;
@@ -415,20 +412,20 @@ main .plangs img {
 	list-style: none;
 	margin: auto;
 }
-.social ul li {
+main .social ul li {
 	margin-right: 20px;
 }
 
-.social ul li:last-child {
+main .social ul li:last-child {
 	margin-right: 0;
 }
 
-.social ul li svg {
+main .social ul li svg {
 	width: 35px;
 	height: 35px;
 }
 
-.social ul li svg:hover {
+main .social ul li svg:hover {
 	width: 40px;
 	height: 40px;
 }
@@ -526,6 +523,10 @@ footer.new p {
 /* Stupid mobile adaptation */
 
 @media screen and (max-width: 675px) {
+  header nav {
+    margin-bottom: 30px;
+  }
+
   header nav svg {
     transform: translateY(-25%);
     height: 45px;
@@ -541,7 +542,7 @@ footer.new p {
   }
 
   header .me {
-    margin: 15% auto;
+    margin: 60px auto;
   }
 
   header .me .face img {
@@ -559,6 +560,10 @@ footer.new p {
 }
 
 @media screen and (max-width: 512px) {
+  header nav {
+    margin-bottom: 25px;
+  }
+
   header nav svg {
     transform: translateY(-25%);
     height: 40px;
@@ -598,12 +603,16 @@ footer.new p {
     font-size: 14px;
   }
 
-  .social ul {
+  main .social ul {
     font-size: 13px;
   }
 }
 
 @media screen and (max-width: 400px) {
+  header nav {
+    margin-bottom: 20px;
+  }
+
   header nav svg {
     transform: translateY(-5%);
     height: 25px;
@@ -625,5 +634,29 @@ footer.new p {
 
   footer.new {
     font-size: 11px;
+  } 
+}
+
+@media screen and (max-width: 320px) {
+
+  header .me .face img {
+    width: 100px;
+    height: 100px;
+  }
+
+  header .me h1 {
+    font-size: 40px;
+  }
+
+  main {
+    font-size: 12px;
+  }
+  
+  main .social ul {
+    font-size: 11px;
+  }
+
+  footer.new {
+    font-size: 10px;
   } 
 }
