@@ -539,6 +539,19 @@ footer.new p {
     margin: 14px 12px;
     font-size: 0.85em;
   }
+
+  header .me .face img {
+    width: 140px;
+    height: 140px;
+  }
+
+  header .me h1 {
+    font-size: 55px;
+  }
+
+  main {
+    font-size: 15px;
+  }
 }
 
 @media screen and (max-width: 512px) {
