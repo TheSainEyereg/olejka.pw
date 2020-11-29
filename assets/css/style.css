@@ -266,7 +266,7 @@ header {
 header nav {
   font-size: 30px;
   position: relative;
-  margin-bottom: 5%;
+  margin-bottom: 60px;
 }
 
 header nav a{
@@ -613,6 +613,17 @@ footer.new p {
     margin: 8px 5px;
     font-size: 0.50em;
   }
-  
 
+  header .me .face img {
+    width: 110px;
+    height: 110px;
+  }
+
+  header .me h1 {
+    font-size: 45px;
+  }
+
+  footer.new {
+    font-size: 11px;
+  } 
 }
