@@ -354,7 +354,7 @@ header nav ul li a:focus::after {
 
 header .me {
   padding: 5px;
-  margin: 2% auto;
+  margin: 5% auto;
 }
 
 header .me * {
@@ -540,6 +540,10 @@ footer.new p {
     font-size: 0.85em;
   }
 
+  header .me {
+    margin: 15% auto;
+  }
+
   header .me .face img {
     width: 140px;
     height: 140px;
@@ -590,6 +594,13 @@ footer.new p {
     font-size: 0.65em;
   }
 
+  main {
+    font-size: 14px;
+  }
+
+  .social ul {
+    font-size: 13px;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -602,5 +613,6 @@ footer.new p {
     margin: 8px 5px;
     font-size: 0.50em;
   }
+  
 
 }
