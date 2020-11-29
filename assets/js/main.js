@@ -183,7 +183,7 @@ let data = {
             $("head").append($("<script id=\"TEMP\" type=\"text/javascript\"></script>").attr("src", url+"&v="+vk_api_ver+"&callback=data.vk.catch"));
         },
         catch(ansv) {
-            debug.log("Cached VK ansver:\n"+JSON.stringify(ansv.response[0]));
+            debug.log("Cached VK answer:\n"+JSON.stringify(ansv.response[0]));
             data.data = ansv.response[0];
             this.got=true;
             $("#TEMP").remove();
