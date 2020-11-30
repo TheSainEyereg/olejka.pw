@@ -180,7 +180,7 @@ let data = {
         },
         send(url) {
             debug.log("Sent VK request \""+url+"\"");
-            $("head").append($("<script id=\"TEMP\" type=\"text/javascript\"></script>").attr("src", url+"&v="+vk_api_ver+"&callback=data.vk.catch"));
+            $("head").append($("<script id=\"TEMP\" type=\"text/javascript\"></script>").attr("src", url+"&access_token="+vk_api_key+"&v="+vk_api_ver+"&callback=data.vk.catch"));
         },
         catch(ansv) {
             debug.log("Cached VK answer:\n"+JSON.stringify(ansv.response[0]));
@@ -229,7 +229,7 @@ $(() => {
                     debug.log("Appended "+langs.eq(i).attr("title"));
                 }
             });
-            data.vk.get("https://api.vk.com/method/users.get?user_id=263432692&fields=photo_max_orig,online&access_token="+vk_api_key, () => {$(".face").append($("<img>").attr("src", data.data.photo_max_orig))});
+            data.vk.get("https://api.vk.com/method/users.get?user_id=263432692&fields=photo_max_orig,online", () => {$(".face").append($("<img>").attr("src", data.data.photo_max_orig))});
 
             break;
 
