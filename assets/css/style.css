@@ -266,7 +266,6 @@ header {
 header nav {
   font-size: 30px;
   position: relative;
-  margin-bottom: 60px;
 }
 
 header nav a{
@@ -525,10 +524,6 @@ footer.new p {
 /* Stupid mobile adaptation */
 
 @media screen and (max-width: 675px) {
-  header nav {
-    margin-bottom: 30px;
-  }
-
   header nav svg {
     transform: translateY(-25%);
     height: 45px;
@@ -562,9 +557,6 @@ footer.new p {
 }
 
 @media screen and (max-width: 512px) {
-  header nav {
-    margin-bottom: 25px;
-  }
 
   header nav svg {
     transform: translateY(-25%);
@@ -619,9 +611,6 @@ footer.new p {
 }
 
 @media screen and (max-width: 400px) {
-  header nav {
-    margin-bottom: 20px;
-  }
 
   header nav svg {
     transform: translateY(-5%);
@@ -648,7 +637,6 @@ footer.new p {
 }
 
 @media screen and (max-width: 320px) {
-
   header .me .face img {
     width: 100px;
     height: 100px;
