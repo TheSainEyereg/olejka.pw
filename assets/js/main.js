@@ -230,7 +230,7 @@ $(() => {
                 }
             });
             data.vk.get("https://api.vk.com/method/users.get?user_id=263432692&fields=photo_max_orig,online", () => {$(".face").append($("<img>").attr("src", data.data.photo_max_orig))});
-
+            
             break;
 
         default:
