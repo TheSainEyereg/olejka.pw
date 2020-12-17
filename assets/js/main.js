@@ -173,10 +173,11 @@ let data = {
     load(key) {this.data = JSON.parse(sessionStorage.getItem(key))},
     del(key) {sessionStorage.removeItem(key)},
     vk: {
-        func: null,
         get(url, func) {
             this.send(url);
-            this.func = func;
+            if (func != undefined) {
+                this.func = func;
+            } else {this.func = () => {debug.log("No function for that request")}}
         },
         send(url) {
             debug.log("Sent VK request \""+url+"\"");
@@ -188,7 +189,6 @@ let data = {
             this.got=true;
             $("#TEMP").remove();
             this.func();
-            this.func = null;
         }
     }
 }
